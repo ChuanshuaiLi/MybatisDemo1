@@ -1,0 +1,14 @@
+CREATE DATABASE mytest;
+
+USE mytest;
+
+CREATE TABLE users(
+id int primary key auto_increment comment '用户编号',
+username varchar(50) comment '登录账号',
+userpass varchar(50) comment '登录密码',
+nickname varchar(50) comment '用户昵称'
+);
+
+insert into users values(1,"admin","admin","管理员"),
+(2,"manager","manager","管理员"),
+(1,"administrator","administrator","管理员");
